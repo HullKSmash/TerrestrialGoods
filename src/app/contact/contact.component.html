@@ -1,0 +1,41 @@
+
+    <div class="jumbotron">
+        <div class="container text-center page-header">
+            <h1>Contact</h1>
+            <h5>Get in touch with us</h5>
+        </div>
+    </div>
+    <div class="container">
+    <div class="container-fluid mt-1 text-center">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)" novalidate>
+        <div class="form-group">
+            <label class="text-left">
+                Your email:
+                <input type="text" id="_replyto" formControlName="_replytoCtrl" class="form-control" placeholder="name@example.com" required>
+                <div class="alert alert-danger" *ngIf="contactForm.controls._replytoCtrl.errors && (contactForm.controls._replytoCtrl.dirty || 
+                contactForm.controls._replytoCtrl.touched)">
+                Enter a valid email address
+            </div>
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="text-left">
+                Message:
+                <textarea id="message" formControlName="messageCtrl" class="form-control" rows="3" placeholder="Type your message here" required></textarea>
+                <div class="alert alert-danger" *ngIf="contactForm.controls.messageCtrl.errors && (contactForm.controls.messageCtrl.dirty || 
+                contactForm.controls.messageCtrl.touched)">
+                Message cannot be blank
+            </div>
+            </label>
+        </div>
+        <div class="form-check mb-3">
+            <label class="text-left form-check-label">
+                <input type="checkbox" id="subscribe" formControlName="subscribe" class="form-check-input">
+                Keep me up to date on news from Terrestrial Goods
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid" *ngIf="!submitted">Send</button>
+        <button class="btn btn-primary" [disabled]="submitted" *ngIf="submitted">Your message has been sent!</button>
+    </form>
+</div>
+</div>

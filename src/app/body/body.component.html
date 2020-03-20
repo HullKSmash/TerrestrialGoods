@@ -1,0 +1,49 @@
+
+<div class="jumbotron">
+    <div class="container text-center page-header">
+        <h1>Body Care</h1>
+        <h5>Soap & lotion</h5>
+    </div>
+</div>
+<div class="container">
+<div class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-2 sidebar ml-2">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column text-left">
+                    <li><a routerLink="/products">Products Home</a></li>
+                    <li><a routerLink="/hair"> > Hair</a></li>
+                    <li class="active"> > Body</li>
+                    <li><a routerLink="/deodorant"> > Deodorant</a></li>
+                    <li><a routerLink="/face"> > Facial Care</a></li>
+                    <li><a routerLink="/makeup"> > Makeup</a></li>
+                    <li><a routerLink="/tooth"> > Toothpaste</a></li>
+                </ul>
+            </div>    
+        </div>
+        <div class="col-sm-9">
+            <!--Use ng-for to populate products from this category-->
+            <table class="table products-table">
+                <tr *ngFor="let product of bodyProducts; let i=index">
+                    <td>
+                        <div class="float-left">
+                            <a href="{{product.link}}" target="_blank"></a>
+                            <img class="browse-img mx-3" src="{{product.image}}">
+                            <!-- <a href="https://smile.amazon.com/Shampoo-Bars-Refill-Natural-Treated/dp/B071FBKJFT/ref=sr_1_2?crid=2WUWD0V6YJDJG&dchild=1&keywords=sweet+%26+sassy&qid=1584133735&sprefix=sweet+%26+sassy%2Caps%2C222&sr=8-2" target="_blank">
+                                <img src="https://m.media-amazon.com/images/I/81sPV+eylVL._AC_UL320_ML3_.jpg" alt="Sweet &amp; Sassy 3 Shampoo Bars. Made in the USA. All Natural, Organic, SLS Free, Plastic Free, Safe for Color Treated Hair, compare to Lush. Sun Kissed."/></a>-->
+                        </div>
+                        <div>
+                            <h5>{{product.brand}} {{product.title}}</h5>
+                            <p>{{product.description}}</p>
+                            <p>Buy it on <a href="{{product.link}}" target="_blank">{{product.vendor}}</a></p>
+                            <!--<h5>Sweet & Sassy Shampoo Bars</h5>
+                            <p>Organic, natural, mild shampoo bars that come in three scents.</p>
+                            <p>Buy it on <a href="https://smile.amazon.com/Shampoo-Bars-Refill-Natural-Treated/dp/B071FBKJFT/ref=sr_1_2?crid=2WUWD0V6YJDJG&dchild=1&keywords=sweet+%26+sassy&qid=1584133735&sprefix=sweet+%26+sassy%2Caps%2C222&sr=8-2" target="_blank">Amazon</a></p>-->
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,12 @@
+label {
+    width: 60%;
+}
+
+.alert {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #3c755b;
+    border-color: #3c755b;
+}

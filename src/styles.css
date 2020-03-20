@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    height: 100%;
+    margin: 0;
+}
+.jumbotron {
+    background-image: url("https://images.unsplash.com/photo-1506634064465-7dab4de896ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");
+    /*background-color: #d8e8e5;
+    background-size: 100% 100%;*/
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /*    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://images.unsplash.com/photo-1506634064465-7dab4de896ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");*/
+    background-color: #f3fcfa;
+    background-size: cover;
+}
+
+.page-header, .page-header>h1, .page-header>h5 {
+    opacity: 1 !important;
+    color: #332c27;
+    font-weight: bold;
+}
+
+.products-table {
+    text-align: left;
+}
+
+.min-size-img {
+    min-height: 250px;
+    min-width: 250px;
+}
+
+.browse-img {
+    width: 320px;
+}
+  
+.content-wrapper {
+    padding-bottom: 30px;
+/*   flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 30px;
+    height: 100vh;
+    overflow-x: hidden;*/
+}
+  
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+/*    flex-grow: 0;*/
+}
+
+a {
+    color: 
+    #3c755b;
+  }
