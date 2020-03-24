@@ -1,19 +1,41 @@
 <div class="page-wrapper">
-  <app-header></app-header>
-  <br><br>
+
   <div class="content-wrapper">
-      <router-outlet></router-outlet>
+    <div class="jumbotron">
+      <div class="container text-center page-header">
+          <h1>Terrestrial Goods</h1>
+          <h5>A Plastic-Free Marketplace</h5>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-fluid text-center">
+        <div class="row">
+            <nav class="col-sm-2 sidebar px-0 mx-0 d-none d-sm-block">
+                <div class="sidebar-sticky">
+                    <ul class="sticky-top sticky-top-offset nav flex-column text-left">
+                        <a routerLink="/products"><li class="nav-item side" routerLinkActive="active">Browse Home</li></a>
+                        <a routerLink="/hair"><li class="nav-item side" routerLinkActive="active">Hair</li></a>
+                        <a routerLink="/body"><li class="nav-item side" routerLinkActive="active"> Body</li></a>
+                        <a routerLink="/deodorant"><li class="nav-item side" routerLinkActive="active">Deodorant</li></a>
+                        <a routerLink="/face"><li class="nav-item side" routerLinkActive="active"> Face</li></a>
+                        <a routerLink="/makeup"><li class="nav-item side" routerLinkActive="active"> Makeup</li></a>
+                        <a routerLink="/tooth"><li class="nav-item side" routerLinkActive="active"> Teeth</li></a>
+                        <li><hr></li>
+                        <a routerLink="/about"><li class="nav-item side" routerLinkActive="active">About</li></a>
+                        <a routerLink="/contact"><li class="nav-item side" routerLinkActive="active">Contact</li></a>
+                        <a href="http://blog.letsgetearthy.com" target="_blank"><li class="nav-item side">Blog</li></a>
+                    </ul>
+                </div>    
+            </nav>
+            <div class="col-sm-9">
+              <router-outlet></router-outlet>
+            </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <div class="footer">
     <app-footer></app-footer>
   </div>
 </div>
-<!--  <span><a [routerLink]="['']" routerLinkActive="active">Home</a></span>
-  <span><a [routerLink]="['/products']" routerLinkActive="active">Products</a></span>
-  <span><a [routerLink]="['/about']" routerLinkActive="active">About</a></span>
-  <span><a [routerLink]="['/contact']" routerLinkActive="active">Contact</a></span>
-
-
-
-
--->
