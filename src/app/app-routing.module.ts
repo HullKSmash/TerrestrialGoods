@@ -13,7 +13,7 @@ import { MakeupComponent } from 'src/app/makeup/makeup.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},

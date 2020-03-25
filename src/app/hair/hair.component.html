@@ -1,15 +1,24 @@
-<table class="table products-table">
-    <tr *ngFor="let product of hairProducts; let i=index">
-        <td>
-            <div class="float-left">
-                <a href="{{product.link}}" target="_blank"></a>
-                <img class="product-img mx-3" src="{{product.image}}">
-            </div>
-            <div>
-                <h4>{{product.brand}} {{product.title}}</h4>
-                <p>{{product.description}}</p>
-                <a href="{{product.link}}" target="_blank"><button class="btn btn-primary">Buy it on <strong>{{product.vendor}}</strong></button></a>
-            </div>
-        </td>
-    </tr>
-</table>
+<div class="p-0 m-0 shadow card">
+    <table class="table products-table">
+        <thead class="thead-dark text-center">
+            <tr>
+                <th><h3>Hair Care</h3></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of hairProducts; let i=index">
+                <td>
+                    <div class="float-left">
+                        <a href="{{product.link}}" target="_blank"></a>
+                        <img class="product-img mx-3" src="{{product.image}}">
+                    </div>
+                    <div>
+                        <h4>{{product.brand}} {{product.title}}</h4>
+                        <p>{{product.description}}</p>
+                        <a href="{{product.link}}" target="_blank"><button class="btn btn-primary">Buy it on <strong>{{product.vendor}}</strong></button></a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
