@@ -1,6 +1,8 @@
 body {
     height: 100%;
     margin: 0;
+    background-image: url("assets/wood.jpg");
+    background-size: auto;
 }
 .jumbotron {
     background-image: url("assets/leaves.jpg");/*Image by Erol Ahmed - Unsplash*/
@@ -17,18 +19,19 @@ body {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background-color: #f3fcfa;
-    background-size: cover;
+/*    background-color: #f3fcfa;*/
+
 }
 
 .page-header {
-    background-image: url("assets/leaves.jpg");/*Image by Erol Ahmed - Unsplash*/
-    background-size: cover;
+    background-image: url("assets/logo_full.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-top: 0px;
     margin-bottom: 20px;
     color: white;
     font-weight: bold;
-    height: 15vh;
+    height: 145px;
 }
 
 .page-header>h1, .page-header>h5 {
@@ -42,7 +45,7 @@ body {
 
 .product-img {
     width: 300px;
-    border: 1px solid #b6b8ba;    
+    border: 1px solid #729961;    
 }
 
 .min-size-img {
@@ -55,12 +58,12 @@ body {
 }
 
 .btn-primary, .btn-primary:disabled {
-    background-color: #3c755b;
-    border-color: #3c755b;
+    background-color: #114d38;
+    border-color: #114d38;
 }
 
 .btn-primary:hover {
-    background-color: #3c755b;
+    background-color: #114d38;
 }
 
 .icon {
@@ -80,14 +83,10 @@ body {
 
 .sidebar-sticky li {
     padding: 6px 8px 6px 16px;
-    background-color: #f3fcfa;
+    background-color: white;
     text-decoration: none;
     font-size: 18px;
     border: none;
-}
-
-.sticky-top-offset {
-    top: 15px;
 }
 
 .footer {
@@ -98,24 +97,23 @@ body {
 }
 
 .table .thead-dark th, .card-header {
-    background-color: #e8e4d8;
-    border-color: #e8e4d8;
+    background-color: #dac8b5;
+    border-color: #dac8b5;
     color: black;
-    ;
 }
 
 a {
     color: 
-    #3c755b;
+    #114d38;
   }
 
 ul>a:hover {
     text-decoration: none;
-    color: #3c755b;
+    color: #114d38;
 }
 
 li.active {
-    background-color: #e8e4d8;
+    background-color: #dac8b5;
 }
 
 .side {
@@ -123,6 +121,6 @@ li.active {
 }
 
 .side:hover {
-    background-color: #c7c5bf;
+    background-color: #cbcdcb;
 }
 

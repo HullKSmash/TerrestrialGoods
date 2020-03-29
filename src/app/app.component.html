@@ -2,32 +2,13 @@
 
   <div class="content-wrapper">
     <div class="page-header">
-      <div class="container text-center py-2">
-          <h1>Terrestrial Goods</h1>
-          <h5>A Plastic-Free Marketplace</h5>
-      </div>
     </div>
     <div class="container">
       <div class="container-fluid text-center">
         <div class="row">
-          <nav class="col-sm-2 sidebar px-0 mx-0 d-none d-sm-block">
-            <div class="sidebar-sticky ">
-              <ul class="sticky-top sticky-top-offset nav flex-column text-left shadow rounded py-3">
-                <a routerLink="/home"><li class="nav-item side" routerLinkActive="active">Home</li></a>
-                <li><hr></li>
-                <a routerLink="/hair"><li class="nav-item side" routerLinkActive="active">Hair</li></a>
-                <a routerLink="/body"><li class="nav-item side" routerLinkActive="active"> Body</li></a>
-                <a routerLink="/deodorant"><li class="nav-item side" routerLinkActive="active">Deodorant</li></a>
-                <a routerLink="/face"><li class="nav-item side" routerLinkActive="active"> Face</li></a>
-                <a routerLink="/makeup"><li class="nav-item side" routerLinkActive="active"> Makeup</li></a>
-                <a routerLink="/tooth"><li class="nav-item side" routerLinkActive="active"> Teeth</li></a>
-                <li><hr></li>
-                <a routerLink="/about"><li class="nav-item side" routerLinkActive="active">About</li></a>
-                <a routerLink="/contact"><li class="nav-item side" routerLinkActive="active">Contact</li></a>
-                <a href="http://blog.letsgetearthy.com" target="_blank"><li class="nav-item side">Blog</li></a>
-              </ul>
-            </div>    
-          </nav>
+          <div class="col-sm-2">
+            <app-sidenav></app-sidenav>
+          </div>
           <div class="col-sm-9">
             <router-outlet></router-outlet>
           </div>
