@@ -22,7 +22,8 @@ const routes: Routes = [
   {path: 'deodorant', component: DeodorantComponent},
   {path: 'face', component: FaceComponent},
   {path: 'tooth', component: ToothComponent},
-  {path: 'makeup', component: MakeupComponent}
+  {path: 'makeup', component: MakeupComponent},
+  {path: '**', component: HomeComponent}
 ];
 
 @NgModule({
