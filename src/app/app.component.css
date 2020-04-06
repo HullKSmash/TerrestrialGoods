@@ -1,0 +1,26 @@
+.page-header {
+    background-image: url("../assets/logo_full.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    height: 145px;
+}
+
+.page-header>h1, .page-header>h5 {
+    color: white;
+    font-weight: bold;
+}
+
+.page-header-mobile {
+    background-image: url("../assets/logo_mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    height: 145px;
+}

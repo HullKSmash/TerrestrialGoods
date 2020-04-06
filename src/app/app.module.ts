@@ -18,6 +18,7 @@ import { MakeupComponent } from './makeup/makeup.component';
 import { ToothComponent } from './tooth/tooth.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MakeupComponent,
     ToothComponent,
     HomeComponent,
-    SidenavComponent
+    SidenavComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,

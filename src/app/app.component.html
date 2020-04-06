@@ -1,22 +1,25 @@
 <div class="page-wrapper">
 
   <div class="content-wrapper">
-    <div class="page-header">
-    </div>
+    <div class="page-header d-none d-sm-none d-xs-none d-md-block d-lg-block d-xl-block"></div>
+    <div class="page-header-mobile d-md-none d-lg-none d-xl-none d-sm-block d-xs-block"></div> 
     <div class="container">
-      <div class="container-fluid text-center">
+      <div class="container-fluid text-center mx-1">
+        <div class="dropdown show d-md-none d-lg-none d-xl-none d-sm-block d-xs-block pb-2">
+          <app-dropdown></app-dropdown>
+        </div>
+      </div>
         <div class="row">
-          <div class="col-sm-2">
+          <div class="col-md-2 d-none d-md-block d-lg-block d-xl-block">
             <app-sidenav></app-sidenav>
           </div>
-          <div class="col-sm-9">
+          <div class="col-md-10"><!--Make this full width on sm and xs-->
             <router-outlet></router-outlet>
           </div>
         </div>
       </div>
-    </div>
-
   </div>
+
   <div class="footer">
     <app-footer></app-footer>
   </div>

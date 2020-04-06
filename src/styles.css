@@ -13,30 +13,17 @@ body {
 .container, .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
+    max-width: 95%;
+}
+
+.dropdown {
+    width: 100%;
 }
 
 .page-wrapper {
     min-height: 100vh;
     width: 100%;
     position: relative;
-/*    background-color: #f3fcfa;*/
-
-}
-
-.page-header {
-    background-image: url("assets/logo_full.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    color: white;
-    font-weight: bold;
-    height: 145px;
-}
-
-.page-header>h1, .page-header>h5 {
-    color: white;
-    font-weight: bold;
 }
 
 .products-table {
@@ -66,6 +53,7 @@ body {
     background-color: #114d38;
 }
 
+
 .icon {
     height: 50px;
     width: 50px;
@@ -73,20 +61,6 @@ body {
   
 .content-wrapper {
     padding-bottom: 30px;
-}
-
-.sidebar-sticky {
-    padding: 8px;
-    height: 100%;
-    padding-left: 0px;
-}  
-
-.sidebar-sticky li {
-    padding: 6px 8px 6px 16px;
-    background-color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border: none;
 }
 
 .footer {
@@ -103,8 +77,7 @@ body {
 }
 
 a {
-    color: 
-    #114d38;
+    color: #114d38;
   }
 
 ul>a:hover {
