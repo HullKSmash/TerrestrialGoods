@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { BlogComponent } from './blog/blog.component';
 import { HairComponent } from './hair/hair.component';
 import { BodyComponent } from './body/body.component';
 import { DeodorantComponent } from './deodorant/deodorant.component';
@@ -26,7 +25,6 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     AboutComponent,
     ContactComponent,
     FooterComponent,
-    BlogComponent,
     HairComponent,
     BodyComponent,
     DeodorantComponent,

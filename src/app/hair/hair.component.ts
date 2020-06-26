@@ -25,7 +25,7 @@ export class HairComponent implements OnInit {
         type: "shampoo", 
         vendor: "Amazon", 
         title: "Shampoo Bar", 
-        description: "A lathering, subltely scented shampoo bar in 100% plastic-free packaging.  Available in several scents.", 
+        description: "A lathering, subltly scented shampoo bar in 100% plastic-free packaging.  Available in several scents.", 
         image: "https://m.media-amazon.com/images/I/81sPV+eylVL._AC_UL320_ML3_.jpg", 
         link: "https://www.amazon.com/gp/product/B071FBKJFT/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=terrestrialgo-20&creative=9325&linkCode=as2&creativeASIN=B071FBKJFT&linkId=6e9ae9a4119736ff1fd5dc5592604efe"},
       {category: "hair", 

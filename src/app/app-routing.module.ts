@@ -2,7 +2,6 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from 'src/app/about/about.component';
 import { ContactComponent } from 'src/app/contact/contact.component';
-import { BlogComponent } from 'src/app/blog/blog.component';
 import { HairComponent } from 'src/app/hair/hair.component';
 import { BodyComponent } from 'src/app/body/body.component';
 import { DeodorantComponent } from 'src/app/deodorant/deodorant.component';
@@ -16,7 +15,6 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'blog', component: BlogComponent},
   {path: 'hair', component: HairComponent},
   {path: 'body', component: BodyComponent},
   {path: 'deodorant', component: DeodorantComponent},
